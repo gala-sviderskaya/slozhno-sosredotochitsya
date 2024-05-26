@@ -2,4 +2,201 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  margin: 0;
+  font-family: var(--font-family, sans-serif);
+  font-size: var(--main-font-size, 18px);
+  font-weight: 400;
+  color: var(--text-color);
+}
+/*
+@media (375px < width <= 768px) {
+  body {
+
+  }
+*/
+.header {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 1fr min-content 1fr;
+  /*minmax(min-content, max-content)  auto minmax(min-content, max-content);*/
+  /*grid-template-columns: fit-content(375);*/
+  grid-template-columns: fit-content;
+  padding: 10px;
+  position: relative;
+  width: max(100vw, 375px);
+  height: min(100vh, 668px);
+  overflow: auto;
+  background: url(../images/cover-image-dark.png) no-repeat center / cover;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  border-inline-end: 1px solid var(--decorated-color);
+  border-block-start: 1px solid var(--decorated-color);
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  border-inline-start: 1px solid var(--decorated-color);
+  border-block-end: 1px solid var(--decorated-color);
+  width: 25px;
+  height: 25px;
+}
+
+.empty::before {
+  content: "";
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 100%;
+  box-shadow: 0 0 4px 2px var(--decorated-color);
+  background-color: var(--decorated-color);
+  inset-block-start: 18px;
+  inset-inline-end: 18px;
+}
+
+.empty::after {
+  content: "REC";
+  position: absolute;
+  inset-block-start: 11px;
+  inset-inline-end: 38px;
+  color: var(--decorated-color);
+  line-height: 139%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--main-font-size);
+}
+
+.header__theme-menu {
+  /*inset-block-end: 10px;*/
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background: transparent;
+  border: none;
+  padding: 0 13px;
+  min-height: 26px;
+  color: var(--decorated-color);
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: transparent;
+  border-bottom: 1px solid var(--decorated-color);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--decorated-color);
+  text-align: center;
+}
+
+.header__theme-title {
+  justify-self: start;
+  font-family: var(--font-family);
+  font-weight: 700;
+  /*font-size: 116px;*/
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+.header__theme-about {
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
+  height: fit-content;
+  /*max-width: 355px;*/
+  width: min(100%, 355px);
+  font-weight: 700;
+  line-height: 130%;
+  align-self: center;
+  justify-self: end;
+}
+
+@media (width >= 768px) {
+  .header {
+    padding-right: 20px;
+    padding-left: 0;
+    width: max(100vw, 768px);
+    height: min(100vh, 1024px);
+  }
+  .decorated-zone::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+
+  .decorated-zone::after {
+    content: "";
+    position: absolute;
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
+
+  .empty::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 28px;
+    inset-inline-end: 28px;
+  }
+
+  .empty::after {
+    content: "REC";
+    position: absolute;
+    inset-block-start: 21px;
+    inset-inline-end: 48px;
+  }
+
+  .header__theme-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__theme-about {
+    width: max(364px);
+  }
+}
+
+@media (width >= 1024px) {
+  .header {
+    padding-right: 20px;
+    padding-left: 0;
+    width: max(100vw, 1024px);
+    height: min(100vh, 768px);
+  }
+
+  .header__theme-about {
+    width: max(491px);
+  }
+
+  .header__theme-menu {
+    /*inset-block-end: 10px;*/
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
 }

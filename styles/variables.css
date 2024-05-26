@@ -2,3 +2,37 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --font-family: 'IBM Plex Mono', sans-serif;
+  --main-font-size: 18px;
+  --accent-color: #ff0070;
+  --accent-text-color: #000028;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --shadow-color:  #ff0070;
+  --decorated-color:  #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
+}
+
+:root.theme-dark {
+  /* Дублируем переменные для тёмной темы */
+  --accent-color: #ff0070;
+  --accent-text-color: #000028;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --shadow-color: #ff0070;
+  --decorated-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
+}
+
+:root.theme-light {
+  /* Переменные светлой темы */
+  --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
+  --text-color: #353430;
+  --title-color: #ffc2e6;
+  --shadow-color: #ff8dcb;
+  --decorated-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
+}
+

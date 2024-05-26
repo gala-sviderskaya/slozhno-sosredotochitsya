@@ -28,6 +28,7 @@ ul {
   list-style: none;
 }
 
+
 picture {
   margin: 0;
   padding: 0;
@@ -39,4 +40,18 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--accent-color);
+}
+
+button:disabled {
+  pointer-events: none;
 }
