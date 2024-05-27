@@ -7,13 +7,10 @@
   font-size: var(--main-font-size, 18px);
   font-weight: 400;
   color: var(--text-color);
+  background: url(../images/cover-image-dark.png) no-repeat center / cover;
+  background-attachment: fixed;
 }
-/*
-@media (375px < width <= 768px) {
-  body {
 
-  }
-*/
 .header {
   display: grid;
   grid-auto-flow: row;
@@ -27,7 +24,6 @@
   width: max(100vw, 375px);
   height: min(100vh, 668px);
   overflow: auto;
-  background: url(../images/cover-image-dark.png) no-repeat center / cover;
 }
 
 .decorated-zone::before {

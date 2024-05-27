@@ -30,10 +30,7 @@
   --shadow-color: #ff8dcb;
   --decorated-color: #353430;
   --hover-color: rgba(50, 49, 45, 0.4);
-
-  .header {
-    background: url(../images/cover-image-light.png) no-repeat center / cover;
-  }
+  background: url(../images/cover-image-light.png) no-repeat center / cover;
 
   .empty::before {
     content: "";

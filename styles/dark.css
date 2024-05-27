@@ -16,4 +16,5 @@
   --shadow-color: #ff0070;
   --decorated-color: #ff0070;
   --hover-color: rgba(255, 0, 112, 0.4);
+  background: url(../images/cover-image-dark.png) no-repeat center / cover;
 }
