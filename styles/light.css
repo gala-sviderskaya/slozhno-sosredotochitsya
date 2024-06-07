@@ -41,6 +41,10 @@
     content: "";
   }
 
+  .section__title {
+    color: var(--text-color);
+  }
+
   @media (width >= 1024px) {
     --shadow-color: #ff0070;
   }
