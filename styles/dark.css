@@ -4,11 +4,34 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Дублируем переменные светлой темы */
+    --bg-color: #000028;
+    --font-family: 'IBM Plex Mono', sans-serif;
+    --main-font-size: 18px;
+    --accent-color: #ff0070;
+    --accent-text-color: #000028;
+    --text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --shadow-color: #ff0070;
+    --decorated-color: #ff0070;
+    --hover-color: rgb(255 0 112 / 0.4);
+    --bg-img: url(../images/cover-image-dark.png) no-repeat center / cover;
+    background: var(--bg-img);
+    background-color: var(--bg-color);
+    background-attachment: fixed;
+  }
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: #000028;
+  --font-family: 'IBM Plex Mono', sans-serif;
+  --main-font-size: 18px;
   --accent-color: #ff0070;
   --accent-text-color: #000028;
   --text-color: #f1b2ce;
@@ -16,7 +39,18 @@
   --shadow-color: #ff0070;
   --decorated-color: #ff0070;
   --hover-color: rgb(255 0 112 / 0.4);
-  background: url(../images/cover-image-dark.png) no-repeat center / cover; /**/
-  background-color: #000028;
+  --bg-img: url(../images/cover-image-dark.png) no-repeat center / cover;
+  background: var(--bg-img);
+  background-color: var(--bg-color);
   background-attachment: fixed;
+
+  .empty::before {
+    content: '';
+    display: block;
+  }
+
+  .empty::after {
+    content: 'REC';
+  }
+
 }

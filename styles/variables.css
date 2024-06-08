@@ -4,6 +4,7 @@
 */
 
 :root {
+  --bg-color: #000028;
   --font-family: 'IBM Plex Mono', sans-serif;
   --main-font-size: 18px;
   --accent-color: #ff0070;
@@ -13,10 +14,14 @@
   --shadow-color: #ff0070;
   --decorated-color: #ff0070;
   --hover-color: rgb(255 0 112 / 0.4);
+  --bg-img: url(../images/cover-image-dark.png) no-repeat center / cover;
 }
 
 :root.theme-dark {
   /* Дублируем переменные для тёмной темы */
+  --bg-color: #000028;
+  --font-family: 'IBM Plex Mono', sans-serif;
+  --main-font-size: 18px;
   --accent-color: #ff0070;
   --accent-text-color: #000028;
   --text-color: #f1b2ce;
@@ -24,10 +29,14 @@
   --shadow-color: #ff0070;
   --decorated-color: #ff0070;
   --hover-color: rgb(255 0 112 / 0.4);
+  --bg-img: url(../images/cover-image-dark.png) no-repeat center / cover;
 }
 
 :root.theme-light {
   /* Переменные светлой темы */
+  --bg-color: #fff1f7;
+  --font-family: 'IBM Plex Mono', sans-serif;
+  --main-font-size: 18px;
   --accent-color: #ff8dcb;
   --accent-text-color: #353430;
   --text-color: #353430;
@@ -35,4 +44,5 @@
   --shadow-color: #ff8dcb;
   --decorated-color: #353430;
   --hover-color: rgb(50 49 45 / 0.4);
+  --bg-img: url(../images/cover-image-light.png) no-repeat center / cover;
 }
