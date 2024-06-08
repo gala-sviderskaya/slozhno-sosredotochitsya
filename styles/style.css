@@ -7,9 +7,9 @@
   font-size: var(--main-font-size, 18px);
   font-weight: 400;
   color: var(--text-color);
-  background: url(../images/cover-image-dark.png) no-repeat center / cover;
+  /*background: url(../images/cover-image-dark.png) no-repeat center / cover;*/
   background-attachment: fixed;
-  background-color: #000028;
+  /*background-color: #000028;*/
 }
 
 .header {
@@ -121,6 +121,7 @@
 .header__theme-menu-button_active {
   outline: 1px solid var(--decorated-color);
   text-align: center;
+  pointer-events: none;
 }
 
 .header__theme-title {

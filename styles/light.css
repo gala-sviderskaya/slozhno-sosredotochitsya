@@ -13,8 +13,11 @@
     --accent-text-color: #353430;
     --text-color: #353430;
     --title-color: #ffc2e6;
-    --shadow-color: #ff8dcb;
+    --shadow-color: #ff0070;
     --decorated-color: #353430;
+    --hover-color: rgb(50 49 45 / 0.4);
+    background: url(../images/cover-image-light.png) no-repeat center / cover;
+    background-attachment: fixed;
   }
 }
 
@@ -31,6 +34,7 @@
   --decorated-color: #353430;
   --hover-color: rgb(50 49 45 / 0.4);
   background: url(../images/cover-image-light.png) no-repeat center / cover;
+  background-attachment: fixed;
 
   .empty::before {
     content: '';
