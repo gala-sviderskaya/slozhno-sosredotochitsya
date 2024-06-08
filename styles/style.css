@@ -28,7 +28,7 @@
 }
 
 .decorated-zone::before {
-  content: "";
+  content: '';
   position: absolute;
   inset-block-start: 10px;
   inset-inline-end: 10px;
@@ -39,7 +39,7 @@
 }
 
 .decorated-zone::after {
-  content: "";
+  content: '';
   position: absolute;
   inset-block-end: 10px;
   inset-inline-start: 10px;
@@ -54,7 +54,7 @@
 }
 
 .empty::before {
-  content: "";
+  content: '';
   position: absolute;
   inline-size: 9px;
   block-size: 9px;
@@ -66,7 +66,7 @@
 }
 
 .empty::after {
-  content: "REC";
+  content: 'REC';
   position: absolute;
   inset-block-start: 11px;
   inset-inline-end: 38px;
@@ -257,28 +257,28 @@
   }
 
   .decorated-zone::before {
-    content: "";
+    content: '';
     position: absolute;
     inset-block-start: 20px;
     inset-inline-end: 20px;
   }
 
   .decorated-zone::after {
-    content: "";
+    content: '';
     position: absolute;
     inset-block-end: 20px;
     inset-inline-start: 20px;
   }
 
   .empty::before {
-    content: "";
+    content: '';
     position: absolute;
     inset-block-start: 28px;
     inset-inline-end: 28px;
   }
 
   .empty::after {
-    content: "REC";
+    content: 'REC';
     position: absolute;
     inset-block-start: 21px;
     inset-inline-end: 48px;
@@ -359,28 +359,28 @@
   }
 
   .decorated-zone::before {
-    content: "";
+    content: '';
     position: absolute;
     inset-block-start: 20px;
     inset-inline-end: 20px;
   }
 
   .decorated-zone::after {
-    content: "";
+    content: '';
     position: absolute;
     inset-block-end: 20px;
     inset-inline-start: 20px;
   }
 
   .empty::before {
-    content: "";
+    content: '';
     position: absolute;
     inset-block-start: 28px;
     inset-inline-end: 28px;
   }
 
   .empty::after {
-    content: "REC";
+    content: 'REC';
     position: absolute;
     inset-block-start: 21px;
     inset-inline-end: 48px;

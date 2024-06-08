@@ -27,25 +27,25 @@
   --accent-text-color: #353430;
   --text-color: #353430;
   --title-color: #ffc2e6;
-  --shadow-color: #ff8dcb;
+  --shadow-color: #ff0070;
   --decorated-color: #353430;
-  --hover-color: rgba(50, 49, 45, 0.4);
+  --hover-color: rgb(50 49 45 / 0.4);
   background: url(../images/cover-image-light.png) no-repeat center / cover;
 
   .empty::before {
-    content: "";
+    content: '';
     display: none;
   }
 
   .empty::after {
-    content: "";
+    content: '';
   }
 
   .section__title {
     color: var(--text-color);
   }
 
-  @media (width >= 1024px) {
-    --shadow-color: #ff0070;
+  .link {
+    --shadow-color: #ff8dcb;
   }
 }
