@@ -314,11 +314,6 @@
     margin-block-end: 0;
   }
 
-  .section-causes {
-    display: grid;
-    grid-template-columns: auto;
-  }
-
   .section-causes .section__title {
     margin-block-end: 0;
   }
