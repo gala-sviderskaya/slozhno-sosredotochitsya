@@ -39,6 +39,7 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  cursor: pointer;
 }
 
 a:focus,
@@ -48,7 +49,7 @@ button:focus {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid currentColor;
 }
 
 button:disabled {

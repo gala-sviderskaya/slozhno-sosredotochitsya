@@ -11,38 +11,17 @@
   --accent-text-color: #000028;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
+  --section-title-color: #ff0070;
   --shadow-color: #ff0070;
+  --link-shadow-color: #ff0070;
   --decorated-color: #ff0070;
   --hover-color: rgb(255 0 112 / 0.4);
   --bg-img: url(../images/cover-image-dark.png) no-repeat center / cover;
+  --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
-:root.theme-dark {
-  /* Дублируем переменные для тёмной темы */
-  --bg-color: #000028;
-  --font-family: 'IBM Plex Mono', sans-serif;
-  --main-font-size: 18px;
-  --accent-color: #ff0070;
-  --accent-text-color: #000028;
-  --text-color: #f1b2ce;
-  --title-color: #db00ff;
-  --shadow-color: #ff0070;
-  --decorated-color: #ff0070;
-  --hover-color: rgb(255 0 112 / 0.4);
-  --bg-img: url(../images/cover-image-dark.png) no-repeat center / cover;
-}
-
-:root.theme-light {
-  /* Переменные светлой темы */
-  --bg-color: #fff1f7;
-  --font-family: 'IBM Plex Mono', sans-serif;
-  --main-font-size: 18px;
-  --accent-color: #ff8dcb;
-  --accent-text-color: #353430;
-  --text-color: #353430;
-  --title-color: #ffc2e6;
-  --shadow-color: #ff8dcb;
-  --decorated-color: #353430;
-  --hover-color: rgb(50 49 45 / 0.4);
-  --bg-img: url(../images/cover-image-light.png) no-repeat center / cover;
+@media (width >= 768px) {
+  :root {
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
