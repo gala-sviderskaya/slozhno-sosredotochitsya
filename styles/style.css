@@ -332,8 +332,8 @@
     grid-column: span 2;
   }
 
-  .section-causes .article {
-    margin-bottom: 0;
+  .section-causes .article:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .section-advices {
