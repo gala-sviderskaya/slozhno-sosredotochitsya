@@ -7,7 +7,7 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-  :root {
+  .page {
     /* Дублируем переменные светлой темы */
     --bg-color: #fff1f7;
     --font-family: 'IBM Plex Mono', sans-serif;
@@ -32,23 +32,6 @@
   .empty::after {
     content: '';
   }
-}
-
-:root.theme-light {
-  /* Переменные светлой темы */
-  --bg-color: #fff1f7;
-  --font-family: 'IBM Plex Mono', sans-serif;
-  --main-font-size: 18px;
-  --accent-color: #ff8dcb;
-  --accent-text-color: #353430;
-  --text-color: #353430;
-  --title-color: #ffc2e6;
-  --section-title-color: #353430;
-  --shadow-color: #ff8dcb;
-  --link-shadow-color: #ff8dcb;
-  --decorated-color: #353430;
-  --hover-color: rgb(50 49 45 / 0.4);
-  --bg-img: url(../images/cover-image-light.png) no-repeat center / cover;
 }
 
 .page.theme_light {
@@ -80,4 +63,3 @@
     content: '';
   }
 }
-

@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 
-:root {
+.page {
   --bg-color: #000028;
   --font-family: 'IBM Plex Mono', sans-serif;
   --main-font-size: 18px;
@@ -21,7 +21,7 @@
 }
 
 @media (width >= 768px) {
-  :root {
+  .page {
     --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
